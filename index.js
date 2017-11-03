@@ -7,7 +7,7 @@ function chromePath() {
         case 'darwin':
             return '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
         case 'win32':
-            return 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'; // Note: eventually improve this strategy to locate chrome.
+            return 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'; // Note: this is wishful, not a long term solution
         default:
             return 'google-chrome';
     }
@@ -32,7 +32,7 @@ function launching(options = {}) {
         } else {
             reject(new Error(`Unsupported browser: ${browser}`));
         }
-    });
+    })
 }
 
 class Browser {

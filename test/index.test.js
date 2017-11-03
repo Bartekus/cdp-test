@@ -5,7 +5,7 @@ const co = require('co'); // Note: poor mans async/await
 
 const cdpTest = require('..');
 
-describe('cdpTest', function () {
+describe('Github Access Test: ', function () {
     let browser, window;
 
     this.timeout(55000); // Note: end-to-end tests are slow...
@@ -29,7 +29,7 @@ describe('cdpTest', function () {
             yield window.type('cdp-test', "input[name='q']");
             yield window.click("button[type='submit']");
             yield window.waitForElement("ul.repo-list");
-            (yield window.textOf("ul.repo-list")).should.contain('bartekus');
+            (yield window.textOf("ul.repo-list")).should.contain('Bartekus');
         });
     });
 
