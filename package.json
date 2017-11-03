@@ -1,0 +1,30 @@
+{
+    "name": "cdp-test",
+    "version": "0.0.1",
+    "description": " End-to-end web testing on top of Chrome Debugging Protocol",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bartekus/cdp-test.git"
+    },
+    "author": "Barek Kus <bartekus@gmail.com> (http://github.com/bartekus)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/bartekus/cdp-test/issues"
+    },
+    "homepage": "https://github.com/bartekus/cdp-test#readme",
+    "dependencies": {
+        "chrome-remote-interface": "^0.24.5"
+    },
+    "files": [
+        "index.js"
+    ],
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "co": "^4.6.0",
+        "mocha": "^3.5.3"
+    },
+    "scripts": {
+        "test": "mocha"
+    }
+}
